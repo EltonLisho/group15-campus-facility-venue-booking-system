@@ -1,0 +1,212 @@
+/* Custom Styles for Campus Facility Booking System */
+
+/* General Styles */
+body {
+    background-color: #f8f9fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Card Hover Effect */
+.facility-card {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    cursor: pointer;
+}
+
+.facility-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1) !important;
+}
+
+/* Status Badges */
+.badge-pending {
+    background-color: #ffc107;
+    color: #000;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+}
+
+.badge-approved {
+    background-color: #28a745;
+    color: #fff;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+}
+
+.badge-rejected {
+    background-color: #dc3545;
+    color: #fff;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+}
+
+.badge-cancelled {
+    background-color: #6c757d;
+    color: #fff;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+}
+
+/* Time Slot Buttons */
+.time-slot-btn {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #dee2e6;
+    background-color: #fff;
+    transition: all 0.2s ease;
+}
+
+.time-slot-btn:hover {
+    background-color: #007bff;
+    color: #fff;
+    border-color: #007bff;
+}
+
+.time-slot-btn.selected {
+    background-color: #28a745;
+    color: #fff;
+    border-color: #28a745;
+}
+
+/* Calendar Customization */
+.fc-day-today {
+    background-color: rgba(0, 123, 255, 0.1) !important;
+}
+
+.fc-day-past {
+    background-color: #f8f9fa;
+}
+
+/* Booking Card */
+.booking-card {
+    border-left: 4px solid;
+    transition: all 0.2s ease;
+}
+
+.booking-card.pending {
+    border-left-color: #ffc107;
+}
+
+.booking-card.approved {
+    border-left-color: #28a745;
+}
+
+.booking-card.rejected {
+    border-left-color: #dc3545;
+}
+
+.booking-card.cancelled {
+    border-left-color: #6c757d;
+}
+
+/* Loading Spinner */
+.loading-spinner {
+    display: inline-block;
+    width: 3rem;
+    height: 3rem;
+    border: 0.3rem solid #f3f3f3;
+    border-top: 0.3rem solid #007bff;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    
+    .facility-card {
+        margin-bottom: 15px;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+    }
+}
+
+/* Dashboard Stats Cards */
+.stat-card {
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    transition: all 0.2s ease;
+}
+
+.stat-card:hover {
+    transform: translateY(-3px);
+}
+
+.stat-card i {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.stat-card .stat-number {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/* Admin Table */
+.admin-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.admin-table th,
+.admin-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.admin-table th {
+    background-color: #f8f9fa;
+    font-weight: 600;
+}
+
+.admin-table tr:hover {
+    background-color: #f8f9fa;
+}
+
+/* Form Focus States */
+.form-control:focus,
+.form-select:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+/* Button Styles */
+.btn-primary {
+    background-color: #0033A0;
+    border-color: #0033A0;
+}
+
+.btn-primary:hover {
+    background-color: #002280;
+    border-color: #002280;
+}
+
+/* Navbar Brand */
+.navbar-brand {
+    font-size: 1.25rem;
+}
+
+/* Footer */
+.footer {
+    background-color: #fff;
+    border-top: 1px solid #dee2e6;
+    margin-top: 50px;
+    padding: 20px 0;
+}
